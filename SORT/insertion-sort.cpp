@@ -7,7 +7,7 @@ void insertionSort(int a[], int n)
     {
         int temp = a[i];
         int j = i-1;
-        while(j>0 && a[j]>temp)
+        while(j>=0 && a[j]>temp)
         {
             a[j+1] = a[j];
             j--;
@@ -26,7 +26,7 @@ void insertionSort(int a[], int n)
 
 int main()
 {
-    int a[] = {21,45,78,237,634,32,4376,88,199};
+    int a[] = {200,21,45,78,237,634,32,4376,88,199};
     int n = sizeof(a)/sizeof(a[0]);
     insertionSort(a,n);
     return 0;
